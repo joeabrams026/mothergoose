@@ -15,76 +15,64 @@ const Alexa = require('alexa-sdk');
 const APP_ID = undefined;  // TODO replace with your app ID (OPTIONAL).
 
 const languageStrings = {
-    'en-GB': {
-        translation: {
-            FACTS: [
-                'A year on Mercury is just 88 days long.',
-                'Despite being farther from the Sun, Venus experiences higher temperatures than Mercury.',
-                'Venus rotates anti-clockwise, possibly because of a collision in the past with an asteroid.',
-                'On Mars, the Sun appears about half the size as it does on Earth.',
-                'Earth is the only planet not named after a god.',
-                'Jupiter has the shortest day of all the planets.',
-                'The Milky Way galaxy will collide with the Andromeda Galaxy in about 5 billion years.',
-                'The Sun contains 99.86% of the mass in the Solar System.',
-                'The Sun is an almost perfect sphere.',
-                'A total solar eclipse can happen once every 1 to 2 years. This makes them a rare event.',
-                'Saturn radiates two and a half times more energy into space than it receives from the Sun.',
-                'The temperature inside the Sun can reach 15 million degrees Celsius.',
-                'The Moon is moving approximately 3.8 cm away from our planet every year.',
-            ],
-            SKILL_NAME: 'British Space Facts',
-            GET_FACT_MESSAGE: "Here's your fact: ",
-            HELP_MESSAGE: 'You can say tell me a space fact, or, you can say exit... What can I help you with?',
-            HELP_REPROMPT: 'What can I help you with?',
-            STOP_MESSAGE: 'Goodbye!',
-        },
-    },
     'en-US': {
         translation: {
             FACTS: [
-                'A year on Mercury is just 88 days long.',
-                'Despite being farther from the Sun, Venus experiences higher temperatures than Mercury.',
-                'Venus rotates counter-clockwise, possibly because of a collision in the past with an asteroid.',
-                'On Mars, the Sun appears about half the size as it does on Earth.',
-                'Earth is the only planet not named after a god.',
-                'Jupiter has the shortest day of all the planets.',
-                'The Milky Way galaxy will collide with the Andromeda Galaxy in about 5 billion years.',
-                'The Sun contains 99.86% of the mass in the Solar System.',
-                'The Sun is an almost perfect sphere.',
-                'A total solar eclipse can happen once every 1 to 2 years. This makes them a rare event.',
-                'Saturn radiates two and a half times more energy into space than it receives from the sun.',
-                'The temperature inside the Sun can reach 15 million degrees Celsius.',
-                'The Moon is moving approximately 3.8 cm away from our planet every year.',
+                `Baa, baa, black sheep
+                Have you any wool?
+                Yes sir, yes sir, three bags full.
+                One for the master,
+                And one for the dame,
+                And one for the little boy
+                Who lives down the lane.`,
+
+                `Hey, diddle, diddle,
+                The cat and the fiddle,
+                The cow jumped over the moon;
+                The little dog laughed
+                To see such sport,
+                And the dish ran away with the spoon.`,
+
+                `Hickory, dickory, dock,
+                The mouse ran up the clock;
+                The clock struck one,
+                And down he run,
+                Hickory, dickory, dock.`,
+
+                `Hot-cross buns!
+                Hot-cross buns!
+                One a penny, two a penny,
+                Hot-cross buns!
+                If you have no daughters,
+                Give them to your sons;
+                One a penny, two a penny,
+                Hot-cross buns!`,
+
+                `Jack be nimble,
+                Jack be quick,
+                Jack jump over
+                The candlestick.`,
+
+                `Jack and Jill went up the hill
+                To fetch a pail of water;
+                Jack fell down and broke his crown,
+                and Jill came tumbling after.
+
+                Up Jack got, and home did trot,
+                As fast as he could caper,
+                To old Dame Dob, who patched his nob
+                With vinegar and brown paper.`,
+
+                `Pat-a-cake, pat-a-cake, baker's man,
+                Bake me a cake, as fast as you can;
+                Pat it, prick it, and mark it with B,
+                Put it in the oven for baby and me.`
             ],
-            SKILL_NAME: 'American Space Facts',
-            GET_FACT_MESSAGE: "Here's your fact: ",
-            HELP_MESSAGE: 'You can say tell me a space fact, or, you can say exit... What can I help you with?',
-            HELP_REPROMPT: 'What can I help you with?',
+            SKILL_NAME: 'Mother goose facts',
+            GET_FACT_MESSAGE: "Time for a rhyme: ",
+            HELP_MESSAGE: 'You can say tell me a rhyme, or, you can say exit...',
+            HELP_REPROMPT: 'Say rhyme or exit?',
             STOP_MESSAGE: 'Goodbye!',
-        },
-    },
-    'de-DE': {
-        translation: {
-            FACTS: [
-                'Ein Jahr dauert auf dem Merkur nur 88 Tage.',
-                'Die Venus ist zwar weiter von der Sonne entfernt, hat aber höhere Temperaturen als Merkur.',
-                'Venus dreht sich entgegen dem Uhrzeigersinn, möglicherweise aufgrund eines früheren Zusammenstoßes mit einem Asteroiden.',
-                'Auf dem Mars erscheint die Sonne nur halb so groß wie auf der Erde.',
-                'Die Erde ist der einzige Planet, der nicht nach einem Gott benannt ist.',
-                'Jupiter hat den kürzesten Tag aller Planeten.',
-                'Die Milchstraßengalaxis wird in etwa 5 Milliarden Jahren mit der Andromeda-Galaxis zusammenstoßen.',
-                'Die Sonne macht rund 99,86 % der Masse im Sonnensystem aus.',
-                'Die Sonne ist eine fast perfekte Kugel.',
-                'Eine Sonnenfinsternis kann alle ein bis zwei Jahre eintreten. Sie ist daher ein seltenes Ereignis.',
-                'Der Saturn strahlt zweieinhalb mal mehr Energie in den Weltraum aus als er von der Sonne erhält.',
-                'Die Temperatur in der Sonne kann 15 Millionen Grad Celsius erreichen.',
-                'Der Mond entfernt sich von unserem Planeten etwa 3,8 cm pro Jahr.',
-            ],
-            SKILL_NAME: 'Weltraumwissen auf Deutsch',
-            GET_FACT_MESSAGE: 'Hier sind deine Fakten: ',
-            HELP_MESSAGE: 'Du kannst sagen, „Nenne mir einen Fakt über den Weltraum“, oder du kannst „Beenden“ sagen... Wie kann ich dir helfen?',
-            HELP_REPROMPT: 'Wie kann ich dir helfen?',
-            STOP_MESSAGE: 'Auf Wiedersehen!',
         },
     },
 };
